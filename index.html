@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cotton house - コットンハウス -</title>
+    <meta name="descriprion" content="Cotton house -コットンハウス-はパッチワーク制作・販売、オーダーメイド、パッチワーク教室のお店です。「私のいいもの、すてきなもの」とずっと一緒に。パッチワークの物を暮らしの中で使うたのしさ、自分好みにつくるよろこびを通じてみなさんの毎日にハンドメイドの温かみを添えたい。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- レスポンシブ対応 -->
+
+
+    <!-- サイトオープン　ロゴフェードイン -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <!-- スライダー -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+
+    <!-- ロードでふわっと表示 -->
+    <script type="text/javascript">
+        function load_effect() {
+          var element = document.getElementsByClassName('load-fade');
+          if(!element) return; // 要素がない場合は終了
+          
+          for(var i = 0; i < element.length; i++) { 
+            element[i].classList.add('is-show');
+          }
+        }
+        setTimeout(load_effect, 600); // 600ミリ秒経過後に実行
+    </script>
+
+    <!-- スクロールでふわっと表示 -->
+    <script type="text/javascript">
+        function scroll_effect() {
+          var element = document.getElementsByClassName('scroll-up');
+          if(!element) return;
+                              
+          var scrollY = window.pageYOffset;
+          var windowH = window.innerHeight;
+          var showTiming = 200; // 要素を表示するタイミング
+          for(var i = 0; i < element.length; i++) { 
+            var elemClientRect = element[i].getBoundingClientRect(); 
+            var elemY = scrollY + elemClientRect.top; 
+            if(scrollY > elemY - windowH + showTiming) {
+              element[i].classList.add('is-show');
+            }
+          }
+        }
+        window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+    </script>
+
+    <noscript> <!--JS無効化対策-->
+        <style>
+          .load-fade, .scroll-up {
+           opacity: 1;
+           visibility: visible;
+           transform: translateY(0px);
+         }
+        </style>
+    </noscript>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css"><!--CSS初期リセット-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"><!--google fonts-->
+    <link rel="icon" type="image/png" href="img/img1/favicon.png"><!-- ファビコン -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="logo_fadein"><!-- オープン時　ロゴ -->
+        <p><img src="img/img1/logo2.png" alt=""></p>
+    </div>
+
+    <button id="scroll-to-top-btn"><!-- スクロールアップ　ボタン -->
+        <img src="img/img1/scrool-button.png" alt="">
+    </button>
+
+    <header><!-- ヘッダー -->
+        <div class="logo-and-list">
+            <h1><a href="index.html"><img class="pc" src="img/img1/logo.png" alt="Cotton house-コットンハウス- パッチワーク制作・販売、オーダーメイド、パッチワーク教室のお店"></a></h1>
+            <h1><a href="index.html"><img class="sp" src="img/img1/logo3@2x.png" alt="Cotton house-コットンハウス- パッチワーク制作・販売、オーダーメイド、パッチワーク教室のお店"></a></h1>
+            <nav class="header-list">
+                <ul>
+                    <li><a href="index.html">ホーム　</a></li>        
+                    <li><a href="concept.html">私たちの想い　</a></li>
+                    <li><a href="shop.html">お店について　</a></li>
+                    <li><a href="fabrication-lessons.html">制作と教室　</a></li>
+                    <li><a href="blog-news.html">お知らせ　</a></li>
+                    <li><a href="contact.html">お問い合わせ　</a></li>
+                    <li><a href="netshop.html">ネットショップ　</a></li>
+                </ul>
+            </nav>
+       </div>
+
+       <div class="hamburger-menu"><!-- ハンバーガーメニュー -->
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html"><span>ホーム</span></a></li>
+                <li><a href="concept.html"><span>私たちの想い</span></a></li>
+                <li><a href="shop.html"><span>お店について</span></a></li>
+                <li><a href="fabrication-lessons.html"><span>制作と教室</span></a></li>
+                <li><a href="fabrication.html"><span>制作とオーダーメイド</span></a></li>
+                <li><a href="lessons.html"><span>パッチワーク教室</span></a></li>
+                <li><a href="blog-news.html"><span>お知らせ</span></a></li>
+                <li><a href="contact.html"><span>お問い合わせ</span></a></li>
+                <li><a href="netshop.html"><span>ネットショップ</span></a></li>
+            </ul>
+        </div>
+        <!--ここまでメニュー-->
+       </div>
+
+    </header><!-- /ヘッダー -->
+
+
+    <section class="fv"><!-- FV -->
+
+        <img class="fv-ito item2" src="img/img1/fv-illust1.png" alt="">
+       
+        <div class="swiper-container"><!-- スライダー -->
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="fv-quilt-house item1" src="img/img1/fv-img1.png" alt="手元"></div>
+                <div class="swiper-slide"><img class="fv-quilt-house item1" src="img/img1/fv-img2.png" alt="キルトの家"></div>
+                <div class="swiper-slide"><img class="fv-quilt-house item1" src="img/img1/fv-img3.png" alt="りんごのアップリケ"></div>
+                <div class="swiper-slide"><img class="fv-quilt-house item1" src="img/img1/fv-img4.png" alt="ポーチたち"></div>
+                <div class="swiper-slide"><img class="fv-quilt-house item1" src="img/img1/fv-img5.png" alt="道具"></div>
+            </div>    
+        </div>
+
+            <h2 class="fv-p">
+                <img class="item5" src="img/img1/fv-p3.png" alt="ずっと一緒に。">
+                <img class="item4" src="img/img1/fv-p2.png" alt="素敵なものと">
+                <img class="item3" src="img/img1/fv-p1.png" alt="私のいいもの、">
+            </h2>
+        
+    </section><!-- /FV -->
+
+
+    <section class="concept"><!-- 私たちの想い -->
+        
+        <div class="line scroll-up">
+            <img class="pc" src="img/img1/line1.png" alt="">
+            <img class="sp" src="img/img1/line1@2x.png" alt="">
+        </div>
+        
+        <div>
+            <h3><img class="section-title1" src="img/img1/concept-ja.png" alt="私たちの想い"></h3>
+            <img  class="section-subtitle1" src="img/img1/concept-en.png" alt="concept">
+        </div>
+        
+        <img class="concept-hasami scroll-up" src="img/img1/concept-illust2.png" alt="">
+        
+        <div class="concept-p">
+            <p><span class="concept-afterline">「私のいいもの、素敵なもの」とずっと一緒に。</span>
+                <br>Cotton house - コットンハウス - は
+                <br>パッチワークの制作販売、オーダーメイド、レッスンの<br class="br-sp">小さなハンドメイドのお店です。
+                <br>パッチワークの物を暮らしのなかで使うたのしさ、<br class="br-sp">自分好みにつくるよろこびを通じて
+                <br>「みなさんの毎日にハンドメイドの温かみを添えたい」
+                <br>それが私たちの想いです。
+            </p>
+        </div>
+        
+        <div class="button1">
+            <a href="concept.html">私たちの想いへ</a>
+        </div>
+
+    </section><!-- /私たちの想い -->
+
+
+    <section class="patchwork-fabrication"><!-- 制作とオーダーメイド -->
+        
+        <div class="line scroll-up">
+            <img class="pc" src="img/img1/line2.png" alt="">
+            <img class="sp" src="img/img1/line2@2x.png" alt="">
+        </div>
+
+        <div>
+            <h3><img class="section-title2" src="img/img1/fabrication-ja.png" alt="パッチワーク制作"></h3>
+            <img class="section-subtitle2" src="img/img1/fabrication-en.png" alt="patchwork fabrication">
+        </div>
+
+        <div class="title-img">
+            <img src="img/img1/fabrication-img2.png" alt="">
+        </div>
+        
+        <div class="title-p">
+            <p>パッチワークとは、いろいろな柄や色、<br class="br-sp">形の生地を組み合わせて作る手芸のことをいいます。
+                <br>「これいいな、素敵だな」
+                <br>そう思ってもらえるような作品を<br class="br-sp">めざして、日々 制作しています。
+                <br><span class="fabrication-afterline">オーダーメイド</span>も承っておりますのでお気軽にご相談ください。
+            </p>
+        </div>
+
+        <div class="fabrication-img scroll-up">
+            <div class="fabrication"><!-- 1列 -->
+                <img src="img/img1/fabrication-img4.png" alt="">
+            </div>            
+            <div class="fabrication">
+                <img src="img/img1/fabrication-img5.png" alt="">
+            </div>            
+            <div class="fabrication">
+                <img src="img/img1/fabrication-img6.png" alt="">
+            </div>
+
+            <div class="fabrication"><!-- 1列 -->
+                <img src="img/img1/fabrication-img7.png" alt="">
+            </div>         
+            <div class="fabrication">
+                <img src="img/img1/fabrication-img8.png" alt="">
+            </div>
+            <div class="fabrication">
+                <img src="img/img1/fabrication-img9.png" alt="">
+            </div>
+        </div>
+            
+        <div class="button2">
+            <a href="fabrication.html">制作とオーダーメイドへ</a>
+        </div>
+
+    </section><!-- /制作とオーダーメイド -->
+
+    <section class="patchwork-lessons"><!-- パッチワーク教室 -->
+        
+        <div class="line scroll-up">
+            <img class="pc" src="img/img1/line3.png" alt="">
+            <img class="sp" src="img/img1/line3@2x.png" alt="">
+        </div>
+
+        <div>
+            <h3><img class="section-title3" src="img/img1/lessons-ja.png" alt="パッチワーク教室"></h3>
+            <img class="section-subtitle3" src="img/img1/lessons-en.png" alt="patchwork lessons">
+        </div>
+        
+        <div class="lessons-line scroll-up">
+            <img src="img/img1/line6.png" alt="">
+        </div>
+        
+        <div class="title-img">
+            <img src="img/img1/lessons-img1.png" alt="">
+        </div>
+            
+        <div class="title-p">
+            <p>Cotton  house-コットンハウス-では<br class="br-sp">パッチワーク教室も行っております。
+                <br>バッグ、布小物、インテリア用品など<br class="br-sp">型紙作りから丁寧にサポート致します。
+                <br><span class="lessons-afterline1">ワークショップコース、</span><span class="lessons-afterline2">レッスンコース</span>と２種類ありますので、
+                <br>ご興味のある方は<br class="br-sp">お気軽にお問い合わせください。
+            </p>
+        </div>
+                
+            <div class="workshop-and-lessons scroll-up">
+                <a href="lessons.html">
+                    <div class="workshop-course">
+                        <img src="img/img1/lessons-img2.png" alt="ワークショップコース">
+                        <p>ワークショップコース</p>
+                    </div>
+                </a>
+                <a href="lessons.html#lesson">
+                    <div class="lessons-course">
+                        <img src="img/img1/lessons-img3.png" alt="レッスンコース">
+                        <p>レッスンコース</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="button1">
+                <a href="lessons.html">パッチワーク教室へ</a>
+            </div>
+
+    </section><!-- /パッチワーク教室 -->
+
+    
+    <section class="blog-and-news"><!-- お知らせ -->
+        
+        <div class="line scroll-up">
+            <img class="pc" src="img/img1/line4.png" alt="">
+            <img class="sp" src="img/img1/line4@2x.png" alt="">
+        </div>
+        
+        
+        <img class="news-zipper scroll-up" src="img/img1/news-illust1.png" alt="">
+        
+        
+        <div class="">
+            <h3><img class="section-title4" src="img/img1/news-ja.png" alt="お知らせ"></h3>
+            <img class="section-subtitle4" src="img/img1/news-en.png" alt="blog & news">
+        </div>
+
+        <div class="title-img">
+            <img src="img/img1/news-img.png" alt="">
+        </div>  
+        
+        <div class="blog-article">
+              <ul>
+                  <div class="blog1">
+                    <li><a href="blog-news.html"><time>2022.05.20</time></a></li>
+                    <li><a href="blog-news.html">【新作】梅雨の時期に心ときめく小物...</a></li>
+                  </div>
+                  <div class="blog2">
+                    <li><a href="blog-news.html"><time>2022.04.28</time></a></li>
+                    <li><a href="blog-news.html">ゴールデンウィークの営業について</a></li>
+                  </div>
+                  <div class="blog3">
+                    <li><a href="blog-news.html"><time>2022.04.01</time></a></li>
+                    <li><a href="blog-news.html">【新学期】お子さんの入学バッグはい...</a></li>
+                  </div>
+              </ul>
+        </div>
+
+        <div class="button2">
+            <a href="blog-news.html">お知らせへ</a>
+        </div>
+
+    </section><!-- /お知らせ -->
+
+
+    <footer><!-- フッター -->
+        
+        <div class="line scroll-up">
+            <img class="pc" src="img/img1/line5-top-pc.png" alt="">
+            <img class="sp" src="img/img1/line5-top-sp@2x.png" alt="">
+        </div>
+        
+        <div class="footer-area">
+             <div class="footer-area-left">
+                 <img class="pc" src="img/img1/logo2.png" alt="Cotton house-コットンハウス-">
+                 <img class="sp" src="img/img1/logo4@2x.png" alt="Cotton house-コットンハウス-">      
+                 <div class="adress">
+                    <span>〒880-0805</span>
+                    <span><br>宮崎県宮崎市橘通東３丁目５−１</span>
+                    <span><br>TEL  0985 - 25 - 0000</span>
+                    <span><br>営業時間 9:30~18:00</span>
+                    <span><br>（水曜定休）</span>
+                 </div>
+             </div>
+
+             <div class="footer-area-right">
+                <nav class="footer-list">
+                    <ul>
+                        <div class="footer-nav1">
+                           <li><a href="index.html">ホーム</a></li>
+                           <li><a href="concept.html">私たちの想い</a></li>
+                           <li><a href="shop.html">お店について</a></li>
+                        </div>
+                        <div class="footer-nav2">
+                           <li><a href="fabrication-lessons.html">制作と教室</a></li>
+                           <li><a href="fabrication.html">制作とオーダーメイド</a></li>
+                           <li><a href="lessons.html">パッチワーク教室</a></li>
+                        </div>
+                        <div class="footer-nav3">
+                           <li><a href="blog-news.html">お知らせ</a></li>
+                           <li><a href="contact.html">お問い合わせ</a></li>
+                           <li><a href="netshop.html">ネットショップ</a></li>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="sns-icon">
+                    <a href="https://twitter.com/?lang=ja"><img src="img/img1/icon-twitter.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/"><img src="img/img1/icon-instagram.png" alt="instagram"></a>
+                    <a href="https://ja-jp.facebook.com/"><img src="img/img1/icon-facebook.png" alt="facebook"></a>
+                 </div>
+             </div>
+        </div>
+        
+        <div class="rights">
+            <p>©️ 2022  Cotton  house -コットンハウス-  RIGHTS  RESERVED. </p>
+         </div>
+
+    </footer><!-- /フッター -->
+
+
+<!-- サイトオープン　ロゴフェードイン -->
+<script>
+    $(function() {
+	setTimeout(function(){
+		$('.logo_fadein p').fadeIn(1000);
+	},500);
+	setTimeout(function(){
+		$('.logo_fadein').fadeOut(1000);
+	},2500);
+});
+</script>
+
+<!-- スライダー -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+           window.addEventListener('load', function(){
+           var elem = document.querySelector(".swiper-container");
+           if (elem !== null) { //swiper-containerがあれば…
+           var mySwiper = new Swiper(".swiper-container", {
+           loop: true, //ループさせる
+           effect: "fade", //フェードのエフェクト
+           autoplay: {
+             delay: 3000, //3秒後に次の画像へ
+             disableOnInteraction: false //ユーザー操作後に自動再生を再開する
+           },
+           speed: 2000, //2秒かけながら次の画像へ移動
+           allowTouchMove: false, //マウスでのスワイプを禁止
+           navigation: { //左右のページ送りを有効にする
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+           },
+          pagination: { //円形のページネーションを有効にする
+            el: ".swiper-pagination",
+            clickable: true //クリックを有効にする
+            }
+            });
+           }
+          });
+        </script>
+
+<script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+
+<!-- 最上部スクロールボタン -->
+<script>
+    //ボタン
+const scroll_to_top_btn = document.querySelector('#scroll-to-top-btn');
+
+//クリックイベントを追加
+scroll_to_top_btn.addEventListener( 'click' , scroll_to_top );
+
+function scroll_to_top(){
+	window.scroll({top: 0, behavior: 'smooth'});
+};
+
+
+//スクロール時のイベントを追加
+window.addEventListener( 'scroll' , scroll_event );
+
+function scroll_event(){
+	
+	if(window.pageYOffset > 400){
+		scroll_to_top_btn.style.opacity = '1';
+	}else	if(window.pageYOffset < 400){
+		scroll_to_top_btn.style.opacity = '0';
+	}
+	
+};
+</script>
+
+
+</body>
+</html>
